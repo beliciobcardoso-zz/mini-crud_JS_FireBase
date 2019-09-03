@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+}
+
+container{
+    display: grid;
+    grid-template-columns: 600px 100px;
+    grid-template-rows: 10vh 60vh 20vh;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-gap: 0.999px;
+    justify-content: center;
+}
+
+header {
+    background-color: #0000ff;
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    background-color: #d0d6d0a2
+}
+
+form{
+    padding: 1%;      
+}
+
+fieldset{
+    padding: 1%;
+    margin: 1% 
+}
+
+#fielDadosPessoal{
+    width: 44%
+}
+#fielDadosPessoal > input{
+    width: 300px
+}
+
+aside{
+    background-color: #b8860b;
+    grid-area: aside;
+}
+
+footer{
+    background-color: #696969;
+    grid-area: footer;
+}
